@@ -201,37 +201,4 @@
         <framework src="com.android.support:recyclerview-v7:27.1.1" />
         
     </platform>
-
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="IronSourceAdsPlugin">
-                <param name="ios-package" value="IronSourceAdsPlugin" />
-            </feature>
-        </config-file>
-        <header-file src="src/ios/IronSourceAdsPlugin.h" />
-        <source-file src="src/ios/IronSourceAdsPlugin.m" />
-        
-        <framework src="IronSourceSDK" type="podspec" spec="~> 6.8.1.0" />
-        
-        <!-- ADD MEDIATION FRAMEWORKS HERE -->
-        <framework src="IronSourceFacebookAdapter" type="podspec" spec="~> 4.3.3.0" />
-        <framework src="IronSourceAdMobAdapter" type="podspec" spec="~> 4.3.1.0" />
-        <framework src="IronSourceUnityAdsAdapter" type="podspec" spec="~> 4.1.2.2" />
-        
-        <framework src="Foundation.framework" />
-        <framework src="AVFoundation.framework" />
-        <framework src="CoreMedia.framework" />
-        <framework src="CoreVideo.framework" />
-        <framework src="QuartzCore.framework" />
-        <framework src="SystemConfiguration.framework" />
-        <framework src="CoreGraphics.framework" />
-        <framework src="CFNetwork.framework" />
-        <framework src="MobileCoreServices.framework" />
-        <framework src="libz.dylib" />
-        <framework src="StoreKit.framework" />
-        <framework src="AdSupport.framework" />
-        <framework src="CoreLocation.framework" />
-        <framework src="CoreTelephony.framework" />
-        <framework src="Security.framework" />
-    </platform>
 </plugin>
